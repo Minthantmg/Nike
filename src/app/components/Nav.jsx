@@ -1,13 +1,14 @@
 import { hamburger } from "../../../public/icons";
 import { headerLogo } from "../../../public/images";
 import { navLinks } from "../../../constants";
+import Image from "next/image";
 
 const Nav = () => {
     return (
         <header className='padding-x py-8 absolute z-10 w-full'>
             <nav className='flex justify-between items-center max-container'>
                 <a href='/'>
-                    <img
+                    <Image
                         src={headerLogo}
                         alt='logo'
                         width={129}
@@ -33,7 +34,7 @@ const Nav = () => {
                     <a href='/'>Explore now</a>
                 </div>
                 <div className='hidden max-lg:block'>
-                    <img src={hamburger} alt='hamburger icon' width={25} height={25} />
+                    <Image src={hamburger} alt='hamburger icon' width={25} height={25} />
                 </div>
             </nav>
         </header>
